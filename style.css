@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+.main-container{
+     background: rgba(255, 144, 14, 0.1);
+}
+.container{
+    padding: 50px 150px;
+}
+.btn{
+    background: #FF900E;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+}
+.gray-text{
+    color: #727272;
+}
+.orange-text{
+    color: #FF900E;
+}
+
+/* ---Navbar Styles Start--- */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    cursor: pointer;
+}
+nav h1{
+    size: 2.813rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+nav ul li{
+    size: 1.125rem;
+}
+
+/* ---Navbar Styles End--- */
+
+/* ---Main Banner Styles Start--- */
+
+.banner-image img{
+    width: 100%;
+    margin-top: 40px;
+}
+.main-banner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.banner-heading{
+    font-size: 3rem;
+    color: #131313;
+    font-weight: 700;
+    margin-top: 70px;
+}
+.para{
+    font-size: 14px;
+    font-weight: 500;
+    color: #727272;
+    margin: 20px 0;
+}
+
+/* ---Main Banner Styles End--- */
+
+/* -----Feature Section Start------ */
+.feature-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.feature-image img{
+    width: 250px; 
+    height: 250px;
+}
+.feature-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.quick-heading{
+    font-size: 2.6em;
+}
+.feature-text{
+    margin-left: 40px;
+}
+
+/* -----Feature Section End------ */
+
+/*---- Second Feature Container Start ---- */
+
+.second-feature-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.sec-feature-img{
+    width: 50%;
+}
+.sec-feature-img img{
+    height: 100%;
+    width: 100%;
+}
+.sec-feature-text{
+    width: 50%;
+}
+.sec-feature-heading h1{
+    font-size: 2.5rem;
+    color: #1b0101;
+    font-weight: 500;
+}
+.list{
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    box-shadow: -1px 1px 10px -3px rgb(0 0 0 / 20%);
+}
+.list h2{
+    font-size: 20px;
+    color: #131313;
+    font-weight: 500;
+}
