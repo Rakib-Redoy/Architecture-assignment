@@ -5,7 +5,7 @@
     font-family: 'Work Sans', sans-serif;
 }
 .main-container{
-     background: rgba(255, 144, 14, 0.1);
+     background: #ff900e1a;
 }
 .container{
     padding: 50px 150px;
@@ -121,6 +121,8 @@ nav ul li{
     font-size: 2.5rem;
     color: #1b0101;
     font-weight: 500;
+    border-left: 4px solid #FF900E;
+    padding-left: 10px;
 }
 .list{
     border: 0;
@@ -133,4 +135,120 @@ nav ul li{
     font-size: 20px;
     color: #131313;
     font-weight: 500;
+}
+.little-banner{
+    background-color: #FF900E;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: -80px;
+    margin-left: -30px;
+}
+.little-banner p{
+    font-size: 16px;
+    text-align: center;
+}
+
+/*---- Second Feature Container End ---- */
+
+/* ----Reward Container Start------ */
+.rewards{
+    display: flex;
+    justify-content: space-around;
+}
+.reward{
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+    position: relative;
+}
+.reward h2{
+        width: 100px;
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        left: 25%;
+        color: #0f0000;
+        opacity: 0;
+        transition: .5s;
+    }
+.reward:hover h2{
+        opacity: 1;
+        top: 45%;
+}
+.reward img{
+    margin-bottom: 30px;
+}
+.reward-heading{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* ----Reward Container End------ */
+/* ----User Feedback container Start---- */
+.user-review img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.reviews{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 30px;
+}
+.user-review{
+    padding: 40px;
+    border: 1px solid #ff000056;
+    border-radius: 10px;
+    box-shadow: -12px 12px 15px -4px rgb(0 0 0 / 54%);
+}
+.review h5{
+    font-size: 25px;
+    color: #f00a0aa6;
+    margin: 10px 0;
+}
+.review-header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+/* ----User Feedback container End---- */
+
+/* ------Sponsor Container Start ------ */
+.sponsor-text{
+    text-align:center;
+}
+.sponsor-heading{
+    font-size: 35px;
+    color: #131313;
+}
+.sponsor-logo img{
+    width: 130px;
+    margin-top: 50px;
+    filter: grayscale(100%);
+}
+.sponsor-logo img:hover{
+    filter: none;
+    cursor: pointer;
+}
+.sponsor-logo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+/* ------Sponsor Container End ------ */
+
+.copy-text{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    background: #ff900e1a;
+    padding: 30px ;
+}
+.copyright-container{
 }
