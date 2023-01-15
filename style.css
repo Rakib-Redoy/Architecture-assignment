@@ -24,6 +24,10 @@
 .orange-text{
     color: #FF900E;
 }
+.green-text{
+    color: #2ed573;
+    text-transform: uppercase;
+}
 
 /* ---Navbar Styles Start--- */
 
@@ -179,7 +183,7 @@ li .non-res-icon{
         font-weight: 600;
         position: absolute;
         top: 0;
-        left: 25%;
+        left: 30%;
         color: #0f0000;
         opacity: 0;
         transition: .5s;
@@ -187,6 +191,9 @@ li .non-res-icon{
 .reward:hover h2{
         opacity: 1;
         top: 45%;
+}
+.reward:hover{
+    background-color: rgba(0, 0, 0, 0.315);
 }
 .reward img{
     margin-bottom: 30px;
