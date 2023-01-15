@@ -109,6 +109,7 @@ nav ul li{
 }
 .sec-feature-img{
     width: 50%;
+    position: relative;
 }
 .sec-feature-img img{
     height: 100%;
@@ -139,12 +140,13 @@ nav ul li{
 .little-banner{
     background-color: #FF900E;
     display: inline-block;
-    font-size: 25px;
+    font-size: 1.5em;
     border-radius: 10px;
     color: #fff;
     padding: 10px 20px;
-    margin-top: -80px;
-    margin-left: -30px;
+    position: absolute;
+    top: 93%;
+    right: 70%;
 }
 .little-banner p{
     font-size: 16px;
@@ -250,5 +252,63 @@ nav ul li{
     background: #ff900e1a;
     padding: 30px ;
 }
-.copyright-container{
-}
+
+/* -----Media Queary Start------ */
+
+@media only screen and (max-width: 576px) {
+    .main-container .container{
+        padding-top: 5px;
+    }
+    .container{
+        width: 100%;
+        padding:50px 0 0 0;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;;
+    }
+    .feature-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .feature-image{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-text{
+        text-align: center;
+    }
+    .second-feature-container{
+        flex-direction: column;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+    .sec-feature-text{
+        text-align: center;
+    }
+    .sec-feature-img{
+        position: relative;
+    }
+    .little-banner{
+        position: absolute;
+        padding: 10px 20px;
+        top: 60%;
+        right: 0;
+    }
+    .rewards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .reward-text{
+        text-align: center;
+    }
+    .reviews{
+        flex-direction: column;
+    }
+    .sponsor-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}   
