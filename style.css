@@ -45,6 +45,12 @@ nav h1{
 nav ul li{
     size: 1.125rem;
 }
+.resp-icon{
+    display: none;
+}
+li .non-res-icon{
+    display: block;
+}
 
 /* ---Navbar Styles End--- */
 
@@ -253,19 +259,28 @@ nav ul li{
     padding: 30px ;
 }
 
-/* -----Media Queary Start------ */
+/* -----Media Query Start------ */
 
 @media only screen and (max-width: 576px) {
     .main-container .container{
-        padding-top: 5px;
+        padding-top: 0;
     }
     .container{
         width: 100%;
         padding:50px 0 0 0;
     }
-    nav{
-        flex-direction: column;
-        align-items: center;;
+    .menu-bar{
+        padding: 10px;
+    }
+    .resp-icon{
+        display: block;
+    }
+    nav ul{
+        
+        padding-right: 5px;
+    }
+    .non-res-icon{
+        display: none;
     }
     .feature-container{
         display: flex;
@@ -273,6 +288,10 @@ nav ul li{
     }
     .feature-image{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-image img{
+        width: 300px;
+        height: 300px;
     }
     .feature-text{
         text-align: center;
@@ -312,4 +331,6 @@ nav ul li{
         align-items: center;
     }
     
-}   
+  
+}
+    
