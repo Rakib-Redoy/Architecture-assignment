@@ -276,6 +276,7 @@ nav ul li{
     }
     .feature-text{
         text-align: center;
+        margin-left: 0;
     }
     .second-feature-container{
         flex-direction: column;
